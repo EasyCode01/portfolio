@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,20 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <h1 class="text-center">Hello</h1>
+  <body
+    class="dark:bg-dark-primary-color transition-all duration-100 ease-linear"
+  >
+    <h1
+      class="text-center text-title-color dark:text-dark-title-color text-5xl font-poppins font-bold"
+    >
+      Hello
+    </h1>
+
+    <button class="btn__primary dark__switch">dark</button>
+    <button class="btn__primary dark:btn__dark light__switch hide">
+      light
+    </button>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

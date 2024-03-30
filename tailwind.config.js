@@ -4,10 +4,6 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        nunito: ["Nunito", "sans-serif"],
-      },
       colors: {
         "primary-color": "#fff",
         "dark-primary-color": "#0D0D0D",
@@ -18,6 +14,11 @@ module.exports = {
         "text-color": "#000",
         "dark-text-color": "#F2F2F2",
         "dark-modifier": "#B3B3B3",
+      },
+
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
       },
     },
   },
