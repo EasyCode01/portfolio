@@ -1,5 +1,6 @@
 const lightSwitch = document.querySelector(".light__switch");
 const darkSwitch = document.querySelector(".dark__switch");
+const header = document.querySelector(".header");
 
 const switchToggle = () => {
   lightSwitch.classList.toggle("hide");
@@ -38,3 +39,15 @@ const switchTheme = () => {
 
 lightSwitch.addEventListener("click", () => switchTheme());
 darkSwitch.addEventListener("click", () => switchTheme());
+
+// add boxshawdow on scroll
+window.addEventListener("scroll", () => {
+  let currentPos = window.pageYOffset;
+  if (currentPos >= "200") {
+    header.classList.add("box-shadow");
+    console.log("add");
+  } else {
+    header.classList.remove("box-shadow");
+    console.log("remove");
+  }
+});

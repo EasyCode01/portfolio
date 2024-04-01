@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-nunito;
+}
+
 a {
   @apply no-underline;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .para-text {
@@ -30,4 +38,8 @@ a {
   .hide {
     @apply hidden;
   }
+
+  /* .box-shadow {
+    @apply shadow-lg shadow-gray-300;
+  } */
 }
