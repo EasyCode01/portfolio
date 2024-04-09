@@ -11,10 +11,248 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4fee7e48a6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body
     class="dark:bg-dark-primary-color transition-all duration-100 ease-linear"
   >
+    <!-- Navbar -->
+    <header
+      class="header w-full h-[70px] hidden lg:flex justify-center items-center fixed top-0 bg-tertiary-color dark:bg-dark-tertiary-color z-20"
+    >
+      <nav class="container mx-auto flex justify-between items-center">
+        <h3
+          class="font-extrabold text-[1.1rem] md:text-[1.3rem] dark:text-primary-color"
+        >
+          &lt; EasyCode /&gt;
+        </h3>
+
+        <ul class="flex items-center gap-8">
+          <li>
+            <a class="anchor dark:text-primary-color" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="anchor dark:text-primary-color" href="#about">About</a>
+          </li>
+          <li>
+            <a class="anchor dark:text-primary-color" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="anchor dark:text-primary-color" href="#services"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="anchor dark:text-primary-color" href="#certification"
+              >Certification</a
+            >
+          </li>
+          <li>
+            <a class="anchor dark:text-primary-color" href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="anchor dark:text-primary-color" href="#projects"
+              >Contact</a
+            >
+          </li>
+          <span
+            class="w-7 h-7 border-0 rounded-full text-base cursor-pointer bg-black dark:bg-primary-color flex items-center justify-center text-primary-color dark__switch"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </span>
+          <span
+            class="w-7 h-7 border-0 rounded-full text-base cursor-pointer bg-dark-primary-color dark:bg-primary-color flex items-center justify-center text-dark-primary-color light__switch hide"
+          >
+            <i class="fa-regular fa-sun"></i>
+          </span>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section
+      id="home"
+      class="home padding__y min-h-[100vh] flex items-center px-5 sm:px-0"
+    >
+      <div
+        class="flex flex-col sm:flex-row-reverse justify-between gap-6 container mx-auto"
+      >
+        <div class="flex w-full sm:w-1/2">
+          <div class="w-1/5 flex flex-col gap-6 sm:hidden">
+            <a href="" class="text-2xl cursor-pointer"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="" class="text-2xl cursor-pointer"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+
+          <div
+            class="border-8 border-black border-solid w-[240px] rounded-full flex justify-center items-center overflow-hidden"
+          >
+            <img
+              class="home__image h-full"
+              src="./images/easy_pic.png"
+              alt="my__profile__pic"
+            />
+          </div>
+        </div>
+
+        <div class="flex gap-16 items-center">
+          <div class="hidden sm:flex flex-col gap-6">
+            <a href="" class="text-2xl cursor-pointer"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="" class="text-2xl cursor-pointer"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="w-full sm:w-4/5 flex flex-col gap-5">
+            <div>
+              <h2
+                class="text-3xl sm:text-4xl text-dark-primary-color dark:text-primary-color font-extrabold tracking-widest"
+              >
+                EasyCode
+              </h2>
+              <p class="flex gap-2 para-text items-center">
+                <span class="block w-10 h-[1.5px] bg-black"></span>
+                <span class="text-lg">Frontend Developer</span>
+              </p>
+            </div>
+
+            <p class="para-text text-lg">
+              Hi, I'm Ezekiel, a versatile Frontend developer passionate about
+              web development and innovative digital products.
+            </p>
+
+            <div class="w-full grid grid-cols-2 sm:grid-cols-1 sm:gap-6">
+              <a href="" class="btn__primary justify-self-start">
+                <span>Say Hello</span>
+                <span>✋</span>
+              </a>
+              <a
+                href=""
+                class="btn__primary btn__dark justify-self-end sm:justify-self-start"
+              >
+                <span>Hire Me</span>
+                <span>✋</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile nav -->
+    <div
+      class="mobile__nav w-full h-16 px-5 sm:px-0 flex justify-center items-center lg:hidden fixed bottom-0 bg-tertiary-color dark:bg-dark-tertiary-color z-20"
+    >
+      <nav class="w-full container mx-auto flex justify-between items-center">
+        <h3
+          class="font-extrabold text-[1rem] md:text-[1.3rem] dark:text-primary-color"
+        >
+          &lt; EasyCode /&gt;
+        </h3>
+
+        <div class="flex items-center gap-5">
+          <span
+            class="w-7 h-7 border-0 rounded-full text-base cursor-pointer bg-black dark:bg-primary-color flex items-center justify-center text-primary-color mobile__dark__switch"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </span>
+          <span
+            class="w-7 h-7 border-0 rounded-full text-base cursor-pointer bg-dark-primary-color dark:bg-primary-color flex items-center justify-center text-dark-primary-color mobile__light__switch hide"
+          >
+            <i class="fa-regular fa-sun"></i>
+          </span>
+
+          <span
+            class="text-xl cursor-pointer open__mobile__nav dark:text-primary-color"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+      </nav>
+    </div>
+
+    <!-- mobile menu -->
+    <div
+      class="w-full bg-tertiary-color dark:bg-dark-tertiary-color h-0 rounded-t-3xl fixed bottom-0 z-30 transition-all duration-200 ease-linear mobile__menu"
+    >
+      <div
+        class="w-full grid grid-cols-3 gap-8 justify-center items-center py-8"
+      >
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+        <a
+          class="flex flex-col w-1/2 justify-self-center gap-1 items-center justify-center mobile__anchor dark:text-primary-color"
+          href="#home"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+          <span class="">Home</span>
+        </a>
+      </div>
+
+      <div class="flex items-center justify-end pr-8">
+        <span
+          class="text-sm cursor-pointer close__mobile__nav dark:text-primary-color"
+          ><i class="fa-solid fa-x"></i
+        ></span>
+      </div>
+    </div>
+
     <script src="js/app.js"></script>
   </body>
 </html>

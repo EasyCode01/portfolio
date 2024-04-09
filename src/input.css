@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-nunito;
+}
+
 a {
   @apply no-underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  @apply w-full;
 }
 
 .para-text {
@@ -12,6 +24,14 @@ a {
 
 .anchor {
   @apply text-text-color hover:font-bold  md:text-[1.1rem] font-nunito  transition-all duration-150 ease-linear;
+}
+
+.mobile__anchor {
+  @apply text-text-color hover:font-bold  text-base font-nunito  transition-all duration-150 ease-linear;
+}
+
+.jss {
+  justify-self: start !important;
 }
 
 @layer utilities {
@@ -23,6 +43,10 @@ a {
     @apply bg-white text-black;
   }
 
+  .padding__y {
+    @apply py-[80px];
+  }
+
   .opacity {
     @apply opacity-80;
   }
@@ -30,4 +54,12 @@ a {
   .hide {
     @apply hidden;
   }
+
+  .show__mobile__menu {
+    @apply h-[320px];
+  }
+
+  /* .box-shadow {
+    @apply shadow-lg shadow-gray-300;
+  } */
 }

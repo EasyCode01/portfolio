@@ -3,6 +3,16 @@ module.exports = {
   content: ["./build/**/*.{html,js}"],
   darkMode: "class",
   theme: {
+    container: {
+      padding: {
+        default: "2rem",
+        xs: "1rem",
+        sm: "2rem",
+        md: "3rem",
+        lg: "4rem",
+        xl: "5rem",
+      },
+    },
     extend: {
       colors: {
         "primary-color": "#fff",
@@ -10,7 +20,7 @@ module.exports = {
         "title-color": "#333333",
         "dark-title-color": "#FFFFFF",
         "tertiary-color": "#FAFAFA",
-        "dark-tertiary": "#262626",
+        "dark-tertiary-color": "#262626",
         "text-color": "#000",
         "dark-text-color": "#F2F2F2",
         "dark-modifier": "#B3B3B3",
